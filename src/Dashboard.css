@@ -1,0 +1,173 @@
+html, body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.full-screen-loading {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .full-screen-loading div {
+    padding: 0 20px;
+    text-align: center; }
+    .full-screen-loading div h1 {
+      color: white !important; }
+    .full-screen-loading div .spinner {
+      animation: rotate 2s linear infinite;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px; }
+      .full-screen-loading div .spinner .path {
+        stroke: white;
+        stroke-linecap: round;
+        animation: dash 1.5s ease-in-out infinite; }
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg); } }
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35; }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124; } }
+.dashboard {
+  height: 100vh;
+  display: flex;
+  width: 100%; }
+  .dashboard .days {
+    height: 100%;
+    width: 140px;
+    flex-basis: 140px;
+    border-right: 1px solid #bdbdbd;
+    overflow: auto; }
+  .dashboard .locations {
+    width: 260px;
+    flex-basis: 260px;
+    height: 100%;
+    border-right: 1px solid #bdbdbd;
+    overflow: auto; }
+  .dashboard .map {
+    width: calc(100% - 400px);
+    flex-basis: calc(100% - 400px);
+    min-height: 100%;
+    position: relative;
+    z-index: 1; }
+  .dashboard .list > span, .dashboard .list > div {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px solid #bdbdbd;
+    width: 100%; }
+    .dashboard .list > span[data-selected="true"], .dashboard .list > div[data-selected="true"] {
+      background-color: #dddddd; }
+  .dashboard h2 {
+    font-size: 1.32em;
+    font-weight: 700 !important;
+    padding: 10px; }
+  .dashboard .options {
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    right: 20px;
+    border-radius: 12px;
+    padding: 10px 12px 12px 12px;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex; }
+    .dashboard .options svg {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      margin: 0 6px; }
+
+.map #map-container {
+  height: 100%; }
+  .map #map-container > div {
+    height: 100%; }
+    .map #map-container > div > div {
+      height: 100%; }
+
+.error-msg {
+  color: #fa4252;
+  margin-top: 12px; }
+
+.marker-custom {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 3px solid white;
+  background-color: #725CFF;
+  padding: 6px;
+  position: relative; }
+
+.marker-cluster-large {
+  background-color: rgba(40, 40, 40, 0.6) !important; }
+  .marker-cluster-large > div {
+    background-color: rgba(40, 40, 60, 0.6) !important; }
+
+.marker-cluster-medium {
+  background-color: rgba(100, 100, 100, 0.6) !important; }
+  .marker-cluster-medium > div {
+    background-color: rgba(100, 100, 100, 0.6) !important; }
+
+.marker-cluster-small {
+  background-color: rgba(160, 160, 160, 0.6) !important; }
+  .marker-cluster-small > div {
+    background-color: rgba(160, 160, 160, 0.6) !important; }
+
+.login {
+  background: #333;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+  .login h1 {
+    font-weight: 700;
+    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin-bottom: 12px;
+    font-size: 2em; }
+  .login .login-container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px; }
+    .login .login-container .form .form-group label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: 700; }
+    .login .login-container .form .form-group input {
+      width: 100%;
+      border: none;
+      background-color: #f5f5f5;
+      border-bottom: 4px;
+      overflow: hidden;
+      padding: 6px 12px; }
+    .login .login-container .form button {
+      padding: 12px 24px;
+      color: white;
+      margin-top: 8px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: 700;
+      background: black;
+      display: inline-block; }
+    .login .login-container .form a {
+      width: 170px;
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      margin-left: 8px; }
+      .login .login-container .form a img {
+        width: 100%; }
+
+/*# sourceMappingURL=Dashboard.css.map */
