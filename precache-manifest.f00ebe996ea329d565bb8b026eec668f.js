@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/private-location-tracker/static/js/runtime~main.4051b66b.js"
   },
   {
-    "revision": "e39585fdd206947d1ded",
-    "url": "/private-location-tracker/static/js/main.b981d710.chunk.js"
+    "revision": "a1f71da78b15601982f6",
+    "url": "/private-location-tracker/static/js/main.2bb7224b.chunk.js"
   },
   {
     "revision": "6127ddaf4da3a97e49d3",
     "url": "/private-location-tracker/static/js/2.2e7e10c9.chunk.js"
   },
   {
-    "revision": "e39585fdd206947d1ded",
+    "revision": "a1f71da78b15601982f6",
     "url": "/private-location-tracker/static/css/main.157596a4.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/private-location-tracker/static/css/2.7925247e.chunk.css"
   },
   {
-    "revision": "deb653a0e7a22430e87a7cd6928bafff",
+    "revision": "6d70d95bcdfd8ac6261340998c3dfdbb",
     "url": "/private-location-tracker/index.html"
   }
 ];
