@@ -6,10 +6,15 @@ import './Dashboard.css';
 import Map from './Map';
 import Utilities from './Utilities';
 
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import LogoutIcon from '-!svg-react-loader!./icons/log-out.svg';
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import PathIcon from '-!svg-react-loader!./icons/analytics.svg';
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import PointIcon from '-!svg-react-loader!./icons/apps.svg';
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import DownloadIcon from '-!svg-react-loader!./icons/download.svg';
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import DownloadFromAppStore from './icons/appstore.png';
 
 const bip39 = require('bip39');
